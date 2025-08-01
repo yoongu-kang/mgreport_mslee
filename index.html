@@ -63,6 +63,80 @@
                 display: none;
             }
         }
+        /* 태그 스타일 */
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        /* 진도 분석 그리드 스타일 */
+        .progress-grid {
+            display: grid;
+            grid-template-columns: 80px repeat(4, 1fr); /* 첫 번째 컬럼은 헤더, 나머지 4개는 학기 */
+            gap: 0.5rem; /* 그리드 셀 간 간격 */
+            text-align: center;
+            font-size: 0.875rem; /* 14px */
+            color: #374151; /* gray-700 */
+        }
+        .grid-cell {
+            background-color: #f3f4f6; /* gray-100 */
+            border-radius: 0.5rem; /* 8px */
+            padding: 0.75rem 0.5rem; /* 12px 8px */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            position: relative; /* ME 아이콘 위치 지정을 위해 */
+            transition: background-color 0.3s ease; /* 배경색 변화 애니메이션 */
+        }
+        .grid-header {
+            background-color: #e5e7eb; /* gray-200 */
+            font-weight: 700;
+            color: #1f2937; /* gray-900 */
+        }
+        /* 나의 진도 표시 */
+        .me-icon {
+            position: absolute;
+            top: 0.25rem;
+            left: 0.25rem;
+            background-color: #ef4444; /* red-500 */
+            color: white;
+            font-size: 0.625rem; /* 10px */
+            font-weight: 700;
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.375rem; /* 6px */
+        }
+        /* 상위권 경로 표시 */
+        .top-tier-path {
+            border: 2px solid #facc15; /* yellow-400 */
+            box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.5); /* 강조 효과 */
+        }
+        /* 토글 버튼 스타일 */
+        .toggle-btn {
+            background-color: transparent;
+            color: #6b7280; /* gray-500 */
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+        .toggle-btn.active {
+            background-color: #ffffff;
+            color: #4f46e5; /* indigo-600 */
+            box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        }
+        /* 탭 버튼 스타일 */
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-bottom: 3px solid transparent;
+            font-weight: 600;
+            color: #6b7280;
+            transition: all 0.2s ease-in-out;
+        }
+        .tab-button.active {
+            border-color: #4f46e5;
+            color: #4f46e5;
+        }
     </style>
 </head>
 <body>
