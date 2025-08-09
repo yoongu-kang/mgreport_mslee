@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- 모바일 기기에서 올바른 화면 비율을 위한 뷰포트 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 학습 분석 리포트 - 이미소 학생</title>
+    <title>AI 학습 분석 리포트 - 손건우 학생</title>
 
     <!-- Tailwind CSS CDN 로드 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -72,6 +72,7 @@
             font-weight: 600;
         }
         /* 진도 분석 그리드 스타일 */
+        
         .progress-grid {
             display: grid;
             grid-template-columns: 80px repeat(4, 1fr); /* 첫 번째 컬럼은 헤더, 나머지 4개는 학기 */
@@ -113,7 +114,18 @@
             border: 2px solid #facc15; /* yellow-400 */
             box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.5); /* 강조 효과 */
         }
-        /* 토글 버튼 스타일 */
+        /* 탭 버튼 스타일 */
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-bottom: 3px solid transparent;
+            font-weight: 600;
+            color: #6b7280;
+        }
+        .tab-button.active {
+            border-color: #4f46e5;
+            color: #4f46e5;
+        }
+                /* 토글 버튼 스타일 */
         .toggle-btn {
             background-color: transparent;
             color: #6b7280; /* gray-500 */
@@ -144,7 +156,7 @@
     <main class="max-w-3xl mx-auto p-4 md:p-6">
         <!-- Report Title and Period Section -->
         <div class="text-center mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">이미소 학생 월간 리포트</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">손건우 학생 월간 리포트</h1>
             <p class="text-md md:text-lg text-gray-500 mt-2">2025년 7월 학습 분석</p>
             <div class="mt-3 text-sm text-gray-400">
                 <p>분석 기간: 2025년 7월 1일 ~ 7월 31일</p>
@@ -153,13 +165,18 @@
 
         <!-- D-Day 섹션 (반응형 수정) -->
         <section class="section-card p-4">
+                <div class="flex-grow mb-4">
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                        뜨거운 여름 햇살 아래, 한 학기를 성실히 마무리한 아이의 모습이 더욱 반짝입니다. <strong>7월, 그동안의 여정을 되돌아보며 건우 학생을 향한 격려와 응원을 담아보았습니다.</strong><br>
+                    </p>
+                </div>
             <div class="flex flex-col sm:flex-row items-center text-center sm:text-left">
                 <div class="flex-shrink-0 mb-3 sm:mb-0 sm:mr-4">
-                    <span class="text-red-600 font-bold text-4xl">D-80</span>
+                    <span class="text-red-600 font-bold text-2xl">D-13</span>
                 </div>
                 <div class="flex-grow">
                     <p class="text-gray-700 text-sm md:text-base leading-relaxed">
-                        연희중학교의 2학년 2학기 중간고사는 <strong class="text-gray-900">10월 20일 ~ 10월 21일</strong>입니다. 10월에는 긴 연휴가 있어, 미리 대비하면 시험을 더욱 여유롭게 준비할 수 있습니다. 미소 학생이 8월~9월 학습 계획을 세우고 꾸준히 실천하도록 챙겨 주세요.
+                        <strong>장평중학교의 2학기 개학일</strong>이 얼마 남지 않았습니다. 리포트에서 건우 학생이 지난 한 달 <strong>2학기를 위해 준비한 것</strong>이 무엇인지 확인하실 수 있습니다.<br>
                     </p>
                 </div>
             </div>
@@ -168,59 +185,37 @@
         
         <!-- 1. Overall Summary -->
         <section class="section-card">
-            <h2 class="text-xl font-bold mb-3 text-indigo-600">🚀 7월 학습 요약</h2>
+            <h2 class="text-xl font-bold mb-3 text-indigo-600">🚀 7월의 성장</h2>
             <p class="text-gray-600 mb-4">
-                지난 한 달간 미소 학생은 <strong class="text-indigo-600">국어, 영어, 수학, 과학, 역사 모든 주요 과목</strong>을 성실하게 학습했습니다.<br>
-                계속해서 <strong class="text-gray-800">과목의 치우침 없이 학습한다면 미래를 위한 공부 체력이 탄탄하게 자랄 것입니다.</strong> 💪 <br>
-                8월 여름방학 마무리 및 새학기 시작에 따른 <strong class="text-gray-800">학습을 꾸준히 이어갈 수 있도록 응원 부탁드립니다.</strong>
+                6월에 비해 <strong class="text-gray-800">스스로 세운 수강 계획의 출석률이 25% 늘어, 학습 태도가 더욱 성실해졌습니다.</strong><br><br>
+                또한 <strong class="text-gray-800">과학 과목에서 질문/답변 게시판을 통해 4회 이상 선생님께 질문하는 등 호기심을 바탕으로 탐구하는 자세가 훌륭합니다.</strong><br><br>
+                건우 학생에게 많은 칭찬과 응원을 보내주세요. 💪
             </p>
             <div class="flex justify-around text-center text-sm">
                 <div>
-                    <p class="font-bold text-2xl text-indigo-500">5</p>
-                    <p class="text-gray-500">학습 과목</p>
+                    <p class="font-bold text-2xl text-indigo-500">22<span class="text-lg">일</span></p>
+                    <p class="text-gray-500">계획 출석</p>
                 </div>
                 <div>
-                    <p class="font-bold text-2xl text-indigo-500">32<span class="text-lg">강</span></p>
-                    <p class="text-gray-500">총 수강</p>
+                    <p class="font-bold text-2xl text-indigo-500">4<span class="text-lg">회</span></p>
+                    <p class="text-gray-500">강좌 Q&A</p>
                 </div>
             </div>
         </section>
 
         <!-- 2. Detailed Analysis by Subject -->
-        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">학습 내용 분석</h2>
+        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">과목별 학습 상세</h2>
 
-        <!-- Subject analysis cards... (Content is unchanged) -->
+        <!-- Subject analysis cards... -->
         <div class="section-card">
             <h3 class="text-xl font-bold text-gray-800 mb-3">📖 국어</h3>
             <div class="space-y-4">
                 <div>
-                    <p class="text-sm text-gray-600 mt-1"><strong class="text-red-500">'일가'</strong> 문학 작품을 통해 등장인물 간의 내적/외적 갈등을 학습했습니다. 무엇보다 <strong class="text-blue-600">꾸준한 수강으로 공부의 흐름을 이어가는 모습</strong>이 정말 기특합니다. 😍</p>
+                    <p class="text-sm text-gray-600 mt-1">1단원에서 <strong class="text-red-500">‘멍키 스패너’</strong> 문학 작품을 통해 <strong>등장인물의 내적/외적 갈등</strong>에 대해 배웠습니다.</p>
                 </div>
                 <div>
-                    <p class="text-sm text-gray-600 mt-1">작품의 내용뿐만 아니라 <strong class="text-blue-600">소설의 시점과 종류(1인칭, 3인칭), 공감적 듣기의 효과와 방법</strong>은 자주 출제되는 중요한 포인트입니다. 미소 학생이 이 부분을 정확히 이해하고 있는지 점검해 주세요. </p>
-                </div>
-            </div>
-        </div>
-        <div class="section-card">
-            <h3 class="text-xl font-bold text-gray-800 mb-3">🔤 영어</h3>
-            <div class="space-y-4">
-                <div>
-                    <p class="text-sm text-gray-600 mt-1">핵심 문법인 <strong class="text-red-500">'목적격 관계대명사'</strong>와 <strong class="text-red-500">'본문 분석'</strong>을 통해 영어의 기본기를 탄탄히 다지고 있습니다. 특히, <strong class="text-red-500">[Top Class] 강의</strong>를 통해 심화 학습까지 도전했어요. 😎</p>
-                </div>
-                <div>
-                    <p class="text-sm text-gray-600 mt-1">미소 학생이 공부한 <strong class="text-blue-600">목적격 관계대명사는 선행사 뒤에 주어와 동사가 바로 오면 관계대명사를 생략할 수 있어요.</strong>
-                    미소 학생이 이러한 영문법 개념을 잘 소화했는지 체크해 주세요.</p>
-                </div>
-            </div>
-        </div>
-        <div class="section-card">
-            <h3 class="text-xl font-bold text-gray-800 mb-3">🧮 수학</h3>
-            <div class="space-y-4">
-                <div>
-                    <p class="text-sm text-gray-600 mt-1">1학기 <strong class="text-red-500">'연립방정식'</strong> 단원 복습을 마치고, 2학기 <strong class="text-red-500">'도형의 성질'</strong> 단원 예습을 시작했습니다. 기말고사 이후에도 남은 1학기 과정을 잘 마무리한 점은 정말 대단합니다.</p>
-                </div>
-                <div>
-                    <p class="text-sm text-gray-600 mt-1">2학년 2학기 수학의 핵심은 '도형의 닮음'입니다. 미소 학생이 2학기 수학을 자신 있게 시작할 수 있도록 <strong class="text-blue-600">닮음의 조건과 성질을 정확히 이해하고 관련 증명 연습</strong>을 반복할 수 있도록 체크해 주세요.</p>
+                    <p class="text-sm text-gray-600 mt-1">소설 작품의 내용뿐만 아니라 <strong class="text-blue-600">서술자 관점과 시점의 종류(1인칭, 3인칭)와 1인칭 화자의 한계점</strong>은
+                    건우 학생의 또래 친구들이 <strong>가장 어려워하는 핵심 개념</strong>입니다. </p>
                 </div>
             </div>
         </div>
@@ -228,52 +223,147 @@
             <h3 class="text-xl font-bold text-gray-800 mb-3">🔬 과학</h3>
             <div class="space-y-4">
                 <div>
-                    <p class="text-sm text-gray-600 mt-1"><strong class="text-red-500">'동물과 에너지'</strong> 단원을 중심으로 2학기 내용을 예습했습니다. 이해가 어려운 개념을 <strong class="text-blue-600">똑똑하게 골라서 공부</strong>하며 자기주도학습 습관을 잘 형성하고 있어요. 🤗</p>
+                    <p class="text-sm text-gray-600 mt-1"><strong class="text-red-500">‘여러 가지 힘’</strong> 단원을 중심으로 수강했습니다.<br>
+                        <strong>핵심키워드 평가</strong>를 통해 수강 후 배운 개념을 복습하고 있는 것을 칭찬합니다. 👍</p>
                 </div>
                 <div>
-                    <p class="text-sm text-gray-600 mt-1">'동물과 에너지' 단원은 <strong class="text-blue-600">소화 → 순환 → 호흡 → 배설을 세포호흡을 통해 에너지를 얻는 한 흐름</strong>임을 연결해서 이해하는 것이 중요합니다. 
-                    미소 학생이 잘 이해하고 있는지 한 번 살펴봐 주세요.</p>
+                    <p class="text-sm text-gray-600 mt-1">‘여러 가지 힘’ 단원에서 <strong class="text-blue-600">힘의 정의와 3요소 (크기 · 방향 · 작용점)</strong> 및 힘의 벡터적 성질은
+                        해당 단원에서 <strong>반드시 알아야 하는 핵심 개념</strong>입니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Math Cards Container -->
+        <div class="math-cards-container">
+            <!-- First Math Card (Always Visible) -->
+            <div class="section-card">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">🧮 수학</h3>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-sm text-gray-600 mt-1">
+                            1학년 2학기의 <strong class="text-red-500">‘기본 도형’,  ‘평면도형’</strong> 단원을 중점으로 수강했습니다.<br>
+                            1학년 2학기의 심화 강좌, 2학년 1학기의 기본 강좌를 추가적으로 수강하며 <strong class="text-blue-600">적극적으로 수학을 공부</strong>하고 있습니다.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mt-1">
+                            건우 학생이 공부한 단원에서 <strong class="text-blue-600">점 · 선 · 면과 각의 종류(예각, 직각, ,둔각, 보각), 평행선과 각의 성질(동위각, 엇각, 맞꼭지각 및 평행선 판정)</strong>은
+                            해당 단원에서 <strong>반드시 알아야 하는 핵심 개념</strong>입니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible Section for other math cards -->
+            <div id="collapsible-math-cards" style="display: none;">
+                <div class="section-card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🧮 수학</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-1">
+                                2학년 2학기의 <strong class="text-red-500">‘기본 도형’,  ‘평면도형’</strong> 단원을 중점으로 수강했습니다.<br>
+                                1학년 2학기의 심화 강좌, 2학년 1학기의 기본 강좌를 추가적으로 수강하며 <strong class="text-blue-600">적극적으로 수학을 공부</strong>하고 있습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mt-1">
+                                건우 학생이 공부한 단원에서 <strong class="text-blue-600">점 · 선 · 면과 각의 종류(예각, 직각, ,둔각, 보각), 평행선과 각의 성질(동위각, 엇각, 맞꼭지각 및 평행선 판정)</strong>은
+                                해당 단원에서 <strong>반드시 알아야 하는 핵심 개념</strong>입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🧮 수학</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-sm text-gray-600 mt-1">
+                                2학년 2학기의 <strong class="text-red-500">‘기본 도형’,  ‘평면도형’</strong> 단원을 중점으로 수강했습니다.<br>
+                                1학년 2학기의 심화 강좌, 2학년 1학기의 기본 강좌를 추가적으로 수강하며 <strong class="text-blue-600">적극적으로 수학을 공부</strong>하고 있습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mt-1">
+                                건우 학생이 공부한 단원에서 <strong class="text-blue-600">점 · 선 · 면과 각의 종류(예각, 직각, ,둔각, 보각), 평행선과 각의 성질(동위각, 엇각, 맞꼭지각 및 평행선 판정)</strong>은
+                                해당 단원에서 <strong>반드시 알아야 하는 핵심 개념</strong>입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Toggle Button -->
+        <div class="flex justify-center -mt-4 mb-4">
+            <button id="toggle-math-button" class="text-indigo-600 hover:text-indigo-800 font-semibold text-sm py-2 px-4">
+                더 보기 ▼
+            </button>
+        </div>
+
+        <div class="section-card">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">🔤 영어</h3>
+            <div class="space-y-4">
+                <div>
+                    <p class="text-sm text-gray-600 mt-1">5단원의 <strong class="text-red-500">‘영단어, 대화 표현, 영문법, 본문 독해’</strong>에 대해 배웠습니다.</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600 mt-1">건우 학생이 공부한 단원에서 <strong class="text-blue-600">There is/are 구문 + 장소 · 수량 표현의 '어순, 단수 · 복수 주어 일치' 문제</strong>
+                        는 시험에 자주 나오는 <strong>출제 포인트</strong>입니다.</p>
                 </div>
             </div>
         </div>
         <div class="section-card">
-            <h3 class="text-xl font-bold text-gray-800 mb-3">📜 역사</h3>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">📜 사회</h3>
             <div class="space-y-4">
                 <div>
-                    <p class="text-sm text-gray-600 mt-1"><strong class="text-red-500">'유럽의 산업화', '제국주의'</strong>까지 2학기 범위를 예습하며 근대 역사 변화의 큰 흐름을 파악했습니다.</p>
+                    <p class="text-sm text-gray-600 mt-1"><strong class="text-red-500">‘사회화와 자아 정체성’</strong>단원의 <strong>대단원 성취도 평가</strong>를 통해 단원의 전반에 대한 자신의 이해도를 점검했습니다.</p>
                 </div>
                 <div>
-                    <p class="text-sm text-gray-600 mt-1">산업혁명으로 강해진 서양 열강이 아시아·아프리카에 침투해 
-                    <strong class="text-blue-600">불평등 조약을 체결하고 근대화를 추진한 과정을 중심</strong>으로 공부하면 도움이 됩니다. 이러한 역사적 배경과 원인을 이해하면 이후 <strong class="text-blue-600">독립과 민족운동</strong>으로 이어진 흐름을 보다 쉽게 파악할 수 있어요. 
-                            미소 학생과 함께 내용을 간단히 이야기해주시면 더욱 도움이 될 것 같아요.
+                    <p class="text-sm text-gray-600 mt-1"><strong class="text-blue-600">자아 정체의 형성 요인 (개인 · 사회 · 문화적 요인의 상호작용과 청소년기 특징)</strong>은
+                        건우 학생의 또래 친구들이 <strong>가장 어려워하는 핵심 개념</strong>입니다. </p>
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- 3. Learning Path Recommendation -->
-        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">학습 제안</h2>
+        <!-- 3. 시기별 교육 정보 -->
+        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">시기별 교육 정보</h2>
+        <div class="section-card">
+            <div id="tab-progress-math-content">
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6 flex flex-col">
+                        <h4 class="font-bold text-lg text-purple-800">💡 첫 시험 대비는 엠베스트와 함께 </h4>
+                        <div class="flex-grow">
+                            <p class="mt-3 text-sm text-purple-700">
+                                1학기 자유학기제를 마무리한 중학교 1학년 학생들은, 2학기부터 <strong>처음으로 중간고사와 기말고사</strong>를 경험하게 됩니다.
+                                첫 시험인 만큼, <strong>시험에 대한 압박과 불안</strong>을 느끼는 학생들이 많을 수 있는데요.
+                                <strong>지금 이 여름방학 기간을 활용해, 시험 대비를 위한 기본적인 학습 습관을 미리 형성해두는 것이 중요합니다.</strong><br><br>
+                                아직은 <strong>자신만의 공부 방법이나 시간 관리가 완성되지 않았을 시기</strong>이기 때문에,
+                                2학기를 준비하며 예습과 함께 <strong>효과적인 시험 공부법을 터득하는 과정</strong>이 꼭 필요합니다.<br><br>
+                                엠베스트 프라임 탭에서만 볼 수 있는《서울대 비밀과외 (수행평가+)》를 통해,
+                                우리 아이가 <strong>스스로에게 맞는 학습법을 찾아갈 수 있도록 응원해 주세요.</strong>
+                                처음 겪는 시험이 두렵지 않도록, 지금의 작은 준비가 아이에게 <strong>큰 자신감</strong>이 되어줄 수 있습니다. 😊
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
 
+
+        
+        <!-- 3. Learning Path Recommendation -->
+        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">학습 방향 추천</h2>
+
+        
         <div class="section-card">
             <!-- Tab Buttons -->
             <div class="flex justify-center border-b border-gray-200 mb-6">
-                <button id="tab-progress-math-btn" class="tab-button active">엠베스트 회원의 수학 진도 분포표</button>
+                <button class="tab-button active">엠베스트 회원의 수학 진도 분포</button>
             </div>
 
             <!-- Math Progress Analysis Content -->
-            <div id="tab-progress-math-content">
-                <!-- Legend and View Toggle -->
+            <div>
+                <!-- Legend -->
                 <div class="flex flex-wrap justify-between items-center mb-4 gap-4">
-                    <!-- Legend -->
                     <div class="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm">
                         <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-red-500 mr-2 flex-shrink-0"></span><span>나의 진도</span></div>
                         <div class="flex items-center"><span class="w-4 h-4 rounded-sm bg-blue-200 mr-2 flex-shrink-0"></span><span>동학년 분포</span></div>
-                        <div class="flex items-center"><span class="w-4 h-4 rounded-sm border-2 border-yellow-500 mr-2 flex-shrink-0"></span><span>상위권 주요 분포</span></div>
-                    </div>
-                    <!-- View Toggle Buttons -->
-                    <div class="flex border border-gray-200 rounded-lg p-0.5">
-                        <button id="view-normal-btn" class="toggle-btn active px-3 py-1 text-sm rounded-md">일반</button>
-                        <button id="view-top-tier-btn" class="toggle-btn px-3 py-1 text-sm rounded-md">상위권</button>
+                        <div class="flex items-center"><span class="w-4 h-4 rounded-sm border-2 border-yellow-500 mr-2 flex-shrink-0"></span><span>상위권 최다 수강</span></div>
                     </div>
                 </div>
 
@@ -282,7 +372,7 @@
                     <!-- Grid content will be generated by JavaScript -->
                 </div>
                 <div class="text-left text-xs text-gray-400 mt-2">
-                    *상위권 학생: 특목자사고 합격자 / 목표달성장학생 수강 이력 반영
+                    *상위권 학생: 동학년 목표달성장학생의 수강
                 </div>
 
                 <!-- AI Recommendation for Math -->
@@ -294,46 +384,94 @@
 
                         또한 <strong>학기별 연계성이 강한 수학 특성상, 다음 학년의 내용을 미리 공부</strong>하는 비중도 높았습니다. (예시: 2학년 2학기와 3학년 2학기 학습 병행)<br><br>
                         
-                        미소 학생의 수학 실력을 더욱 탄탄히 다지기 위해 필요한 강좌 혹은 추가 학습에 대해 함께 이야기 나누어 보시면 좋을 것 같습니다. 😎
+                        건우 학생의 수학 실력을 더욱 탄탄히 다지기 위해 필요한 강좌 혹은 추가 학습에 대해 함께 이야기 나누어 보시면 좋을 것 같습니다. 😎
                     </p>
                 </div>
             </div>
         </div>
-    </main>
 
-    <footer class="text-center py-6 text-gray-500 text-sm">
-        <p>&copy; 2025 Megastudy. All Rights Reserved.</p>
-    </footer>
+        <!-- English Level Distribution -->
+        <div class="section-card">
+            <!-- Tab Button -->
+            <div class="flex justify-center border-b border-gray-200 mb-6">
+                <button class="tab-button active">엠베스트 회원의 영어 레벨 분포</button>
+            </div>
+
+            <!-- Content -->
+            <div>
+                <!-- Legend -->
+                <div class="flex flex-wrap justify-between items-center mb-4 gap-4">
+                    <div class="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm">
+                        <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-red-500 mr-2 flex-shrink-0"></span><span>나의 레벨</span></div>
+                        <div class="flex items-center"><span class="w-4 h-4 rounded-sm bg-blue-200 mr-2 flex-shrink-0"></span><span>동학년 레벨</span></div>
+                        <div class="flex items-center"><span class="w-4 h-4 rounded-sm border-2 border-yellow-500 mr-2 flex-shrink-0"></span><span>상위권 레벨</span></div>
+                    </div>
+                </div>
+
+                <!-- English Level Grid -->
+                <div id="english-level-grid" class="progress-grid" style="grid-template-columns: repeat(5, 1fr); gap: 0.5rem;">
+                    <!-- Grid content will be generated by JavaScript -->
+                </div>
+                <div class="text-left text-xs text-gray-400 mt-2">
+                    *상위권 학생: 동학년 목표달성장학생의 수강
+                </div>
+
+                <!-- AI Recommendation for English -->
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-6 mt-6">
+                    <h4 class="font-bold text-lg text-purple-800">💡 특목/자사고 합격자의 영어 학습 TIP</h4>
+                    <p class="mt-3 text-sm text-purple-700">
+                        <strong>특목/자사고 합격생들은 영어의 기본기를 탄탄하게 다지는 것을 가장 중요하게 생각합니다.</strong> 특히, 꾸준한 단어 암기와 문법 학습을 통해 독해의 정확성을 높이는 데 집중하는 경향을 보입니다.<br><br>
+                        또한, 현재 레벨에 만족하지 않고 <strong>한 단계 높은 수준의 지문을 미리 접하며 문제 해결 능력을 키우는 것</strong>도 상위권 학생들의 공통된 학습 패턴입니다.<br><br>
+                        건우 학생도 현재 학습에 더해, 매일 10개씩 새로운 단어를 암기하고, 주 1회 심화 독해 문제에 도전해보는 것은 어떨까요? 작은 습관이 큰 실력 차이를 만들 수 있습니다. 🚀
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             
-            // --- Section 3 (Progress Analysis): Grid Logic ---
-            const viewNormalBtn = document.getElementById('view-normal-btn');
-            const viewTopTierBtn = document.getElementById('view-top-tier-btn');
+            // --- START: 토글 버튼 기능 추가 ---
+            const toggleButton = document.getElementById('toggle-math-button');
+            const collapsibleContent = document.getElementById('collapsible-math-cards');
+
+            if (toggleButton && collapsibleContent) {
+                toggleButton.addEventListener('click', function() {
+                    // 현재 숨겨져 있는지 확인
+                    const isHidden = collapsibleContent.style.display === 'none';
+                    
+                    if (isHidden) {
+                        // 숨겨져 있다면 보이게 하고 버튼 텍스트 변경
+                        collapsibleContent.style.display = 'block';
+                        this.innerHTML = '숨기기 ▲';
+                    } else {
+                        // 보이고 있다면 숨기고 버튼 텍스트 변경
+                        collapsibleContent.style.display = 'none';
+                        this.innerHTML = '더 보기 ▼';
+                    }
+                });
+            }
+            // --- END: 토글 버튼 기능 추가 ---
+
+
             const mathGrid = document.getElementById('math-progress-grid');
             
             // Math progress data definition
             const mathData = {
-                normal: { // Progress distribution for general students
-                    '2-1': { '기본': 0, '발전': 8, '심화': 0 },
-                    '2-2': { '기본': 52, '발전': 13, '심화': 0 },
-                    '3-1': { '기본': 11, '발전': 9, '심화': 0 },
-                    '3-2': { '기본': 8, '발전': 0, '심화': 0 },
+                topTier: { // 상위권 학생 진도 분포
+                    '2-1': { '기본': 0, '발전': 6, '심화': 0 },
+                    '2-2': { '기본': 36, '발전': 9, '심화': 21 },
+                    '3-1': { '기본': 8, '발전': 6, '심화': 3 },
+                    '3-2': { '기본': 6, '발전': 5, '심화': 0 },
                 },
-                topTier: { // Progress distribution for top-tier students
-                    '2-1': { '기본': 0, '발전': 8, '심화': 0 },
-                    '2-2': { '기본': 52, '발전': 13, '심화': 30 }, // Top-tier has advanced progress
-                    '3-1': { '기본': 11, '발전': 9, '심화': 5 },
-                    '3-2': { '기본': 8, '발전': 7, '심화': 0 },
-                },
-                myPosition: { semester: '2-2', level: '기본' }, // My current progress
-                topTierPath: [ // Recommended learning path for top-tier
+                myPosition: { semester: '2-2', level: '기본' }, // 나의 현재 진도
+                topTierPath: [ // 상위권을 위한 추천 학습 경로
                     { semester: '2-2', level: '심화' },
                     { semester: '3-1', level: '발전' },
                 ],
-                tooltips: { // Tooltip messages for each cell
-                    // REMOVED: Placeholder tooltip for '2-1' was removed for clarity.
+                tooltips: { // 각 셀에 대한 툴팁 메시지
                     '2-2': {
                         '기본': "[주요 학습 진도] 삼각형의 성질, 사각형의 성질",
                         '발전': "[주요 학습 진도] 도형의 닮음",
@@ -351,10 +489,8 @@
                 }
             };
 
-            // List of all possible background/text color classes for easy cleanup
             const bgClasses = ['bg-blue-500', 'text-white', 'bg-blue-400', 'bg-blue-300', 'bg-blue-200', 'bg-blue-100', 'bg-gray-100'];
 
-            // Function to return background color class based on percentage
             function getBgColor(percentage) {
                 if (percentage > 80) return 'bg-blue-500 text-white';
                 if (percentage > 50) return 'bg-blue-400 text-white';
@@ -364,38 +500,20 @@
                 return 'bg-gray-100';
             }
 
-            /**
-             * Updates the math progress grid based on the selected view.
-             * @param {string} view - The view mode, 'normal' or 'top-tier'.
-             */
-            function updateMathGrid(view) {
-                const isTopTierView = view === 'top-tier';
-                
-                // Toggle visibility of the '심화' (Advanced) level row
-                const simhwaRow = mathGrid.querySelector('.simhwa-row');
-                if (simhwaRow) {
-                    simhwaRow.style.display = isTopTierView ? 'contents' : 'none';
-                }
+            function renderMathGrid() {
+                const data = mathData.topTier;
 
-                // Update each cell in the grid based on the view
                 ['2-1', '2-2', '3-1', '3-2'].forEach(semester => {
                     ['기본', '발전', '심화'].forEach(level => {
                         const cell = mathGrid.querySelector(`[data-semester="${semester}"][data-level="${level}"]`);
                         if (!cell) return;
 
-                        const data = isTopTierView ? mathData.topTier : mathData.normal;
                         const percentage = data[semester]?.[level] ?? 0;
                         
-                        // Clean up previous classes
                         cell.classList.remove(...bgClasses, 'top-tier-path');
-                        
-                        // Apply new background color class
                         cell.classList.add(...getBgColor(percentage).split(' '));
-
-                        // Reset tooltip and inner content
                         cell.title = '';
                         
-                        // Set 'ME' icon and percentage text
                         if (mathData.myPosition.semester === semester && mathData.myPosition.level === level) {
                             cell.innerHTML = `<span class="me-icon">ME</span><span>${percentage}%</span>`;
                             cell.title = "[나의 진도] 현재 이 위치에서 학습하고 있습니다.";
@@ -403,34 +521,19 @@
                             cell.innerHTML = `<span>${percentage > 0 ? `${percentage}%` : '&nbsp;'}</span>`;
                         }
                         
-                        // Add general tooltip content
                         if (mathData.tooltips[semester]?.[level]) {
                             cell.title = (cell.title) 
                                 ? `${mathData.tooltips[semester][level]}\n${cell.title}`
                                 : mathData.tooltips[semester][level];
                         }
                         
-                        // Apply top-tier path style if applicable
-                        if (isTopTierView && mathData.topTierPath.some(p => p.semester === semester && p.level === level)) {
+                        if (mathData.topTierPath.some(p => p.semester === semester && p.level === level)) {
                             cell.classList.add('top-tier-path');
                         }
                     });
                 });
             }
 
-            /**
-             * Sets the view mode for the progress grid and updates it.
-             * @param {string} view - The view to set, 'normal' or 'top-tier'.
-             */
-            function setProgressView(view) {
-                viewNormalBtn.classList.toggle('active', view === 'normal');
-                viewTopTierBtn.classList.toggle('active', view === 'top-tier');
-                updateMathGrid(view);
-            }
-
-            /**
-             * Creates the initial HTML structure for the grid.
-             */
             function createInitialGrid() {
                 const semesters = ['중2-1', '중2-2', '중3-1', '중3-2'];
                 const levels = ['심화', '발전', '기본'];
@@ -439,8 +542,7 @@
                 semesters.forEach(s => gridHtml += `<div class="grid-cell grid-header">${s}</div>`);
 
                 levels.forEach(level => {
-                    // Using a wrapper with 'display: contents' and a class for easy toggling
-                    gridHtml += `<div class="${level === '심화' ? 'simhwa-row' : ''}" style="display: contents;">`;
+                    gridHtml += `<div style="display: contents;">`;
                     gridHtml += `<div class="grid-cell grid-header" data-level="${level}">${level}</div>`;
                     ['2-1', '2-2', '3-1', '3-2'].forEach(semester => {
                         gridHtml += `<div class="grid-cell" data-semester="${semester}" data-level="${level}"></div>`;
@@ -451,12 +553,78 @@
                 mathGrid.innerHTML = gridHtml;
             }
 
-            // --- Initialization ---
-            viewNormalBtn.addEventListener('click', () => setProgressView('normal'));
-            viewTopTierBtn.addEventListener('click', () => setProgressView('top-tier'));
-            
-            createInitialGrid(); // Create the grid structure
-            setProgressView('normal'); // Set the initial view to 'normal'
+            if (mathGrid) {
+                createInitialGrid();
+                renderMathGrid();
+            }
+
+            // --- START: English Level Grid ---
+            const englishGrid = document.getElementById('english-level-grid');
+
+            const englishData = {
+                distribution: {
+                    'EB ~ EM': 1,
+                    'EH ~ IB': 16,
+                    'IM ~ IH': 33,
+                    'AB ~ AM': 34,
+                    'AH ~ MA': 16,
+                },
+                myPosition: 'IM ~ IH',
+                topTierPath: ['AH ~ MA'],
+                tooltips: {
+                    'EB ~ EM': '기초 다지기 단계',
+                    'EH ~ IB': '기본 개념 확장 단계',
+                    'IM ~ IH': '응용 및 심화 시작 단계',
+                    'AB ~ AM': '심화 문제 해결 단계',
+                    'AH ~ MA': '최상위권 수준 완성 단계',
+                }
+            };
+
+            function createAndRenderEnglishGrid() {
+                if (!englishGrid) return;
+                englishGrid.innerHTML = ''; // Clear previous content
+
+                const levels = ['EB ~ EM', 'EH ~ IB', 'IM ~ IH', 'AB ~ AM', 'AH ~ MA'];
+
+                levels.forEach(level => {
+                    const cell = document.createElement('div');
+                    // flex-col과 h-24 클래스를 추가하여 세로 정렬 및 높이 조절
+                    cell.className = 'grid-cell flex-col h-24'; 
+
+                    const percentage = englishData.distribution[level] || 0;
+                    
+                    // 분포도에 따라 배경색 적용
+                    const bgColorClass = getBgColor(percentage);
+                    cell.classList.add(...bgColorClass.split(' '));
+
+                    // 셀 내용 설정
+                    let contentHtml = `<span class="font-bold text-lg">${percentage}%</span><span class="text-xs mt-1">${level}</span>`;
+
+                    // 'ME' 아이콘 추가
+                    if (englishData.myPosition === level) {
+                        contentHtml = `<span class="me-icon">ME</span>` + contentHtml;
+                        cell.title = "[나의 진도] 현재 이 위치에서 학습하고 있습니다.";
+                    }
+
+                    // 툴팁 추가
+                    if (englishData.tooltips[level]) {
+                        cell.title = (cell.title ? cell.title + '\n' : '') + englishData.tooltips[level];
+                    }
+
+                    // 상위권 경로 하이라이트
+                    if (englishData.topTierPath.includes(level)) {
+                        cell.classList.add('top-tier-path');
+                    }
+
+                    cell.innerHTML = contentHtml;
+                    englishGrid.appendChild(cell);
+                });
+            }
+
+            if (englishGrid) {
+                createAndRenderEnglishGrid();
+            }
+            // --- END: English Level Grid ---
         });
     </script>
 </body>
